@@ -36,7 +36,7 @@ Data preprocessing was performed programmatically using Python to ensure reprodu
   - Categorical features → mode imputation
 - Encoded categorical variables using Label Encoding
 - Applied feature scaling using StandardScaler
-- Saved the cleaned dataset as `cleaned_telco_churn.csv`
+- Saved the cleaned dataset as `Telco-Customer-Churn.csv`
 
 The cleaned dataset contains no missing values and all features are numeric, making it suitable for machine learning models.
 
@@ -114,7 +114,7 @@ http://127.0.0.1:8000/docs
 ```
 project/
 │── data/
-│   ├── telco_customer_churn.csv
+│   ├── Telco-Customer-Churn.csv
 │   └── cleaned_telco_churn.csv
 │── model/
 │   ├── logistic_regression.pkl
