@@ -19,10 +19,9 @@ def home():
 
 @app.post("/predict")
 def predict_churn(data: dict):
-    # Convert input to DataFrame
+
     input_df = pd.DataFrame([data])
 
-    # Reorder columns to match training
     input_df = input_df[feature_names]
 
     prediction = model.predict(input_df)[0]
