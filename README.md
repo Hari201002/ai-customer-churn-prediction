@@ -116,6 +116,7 @@ A REST API was developed using **FastAPI** to deploy the trained Logistic Regres
   "PaperlessBilling": 1,
   "PaymentMethod": 2
 }
+```
 
 ### Example Response:
 ```json
