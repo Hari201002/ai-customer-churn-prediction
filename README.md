@@ -36,7 +36,7 @@ Data preprocessing was performed programmatically using Python to ensure reprodu
   - Categorical features → mode imputation
 - Encoded categorical variables using Label Encoding
 - Applied feature scaling using StandardScaler
-- Saved the cleaned dataset as `Telco-Customer-Churn.csv`
+- Saved the cleaned dataset as `cleaned_telco_churn.csv`
 
 The cleaned dataset contains no missing values and all features are numeric, making it suitable for machine learning models.
 
@@ -92,6 +92,30 @@ A REST API was developed using **FastAPI** to deploy the trained Logistic Regres
 
 ### Endpoint:
 - **POST** `/predict`
+
+### Example Request Input:
+```json
+{
+  "SeniorCitizen": 0,
+  "tenure": -0.75,
+  "MonthlyCharges": 0.42,
+  "TotalCharges": -0.61,
+  "gender": 1,
+  "Partner": 0,
+  "Dependents": 0,
+  "PhoneService": 1,
+  "MultipleLines": 0,
+  "InternetService": 1,
+  "OnlineSecurity": 0,
+  "OnlineBackup": 1,
+  "DeviceProtection": 0,
+  "TechSupport": 0,
+  "StreamingTV": 1,
+  "StreamingMovies": 0,
+  "Contract": 0,
+  "PaperlessBilling": 1,
+  "PaymentMethod": 2
+}
 
 ### Example Response:
 ```json
